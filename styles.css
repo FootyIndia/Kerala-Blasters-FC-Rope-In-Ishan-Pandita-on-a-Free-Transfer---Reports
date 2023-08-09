@@ -1,0 +1,274 @@
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+*{
+  margin:0;
+  padding:0;
+
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 100%;
+}
+nav{
+  background: #0082e6;
+  height:80px;
+  width: 100%
+}
+.logo{
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  padding:0 20px;
+  text-decoration: none;
+}
+
+.home{
+  text-decoration: none;
+}
+b{
+  color: white;
+  text-decoration:none;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin:0 5px;
+}
+nav ul li a{
+  color:white;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color:white;
+  float:right;
+  line-height: 50px;
+  margin-right: 40px;
+  margin-top: 15px;
+  cursor:pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media(max-width:952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 20px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+
+@media(max-width:890px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height:100vh;
+    background: #2c3e50;
+    top:80px;
+    left:-100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color:#0052e6;
+  }
+  #check:checked ~ ul{
+    left:0;
+  }
+  .footer{
+    background-color: #0082e6;
+    text-align: center;
+    margin-bottom: 0px;
+    padding:5px 5px;
+    margin: 0;
+  }
+  .footer i{
+    padding:5px 10px 5px 10px;
+  }
+}
+
+
+section{
+  background-color: #EFF5F5;
+}
+
+.leftmost
+{
+  display: inline-block;
+  padding:0;
+  margin:0;
+}
+
+.left-side{
+  background-color: #EFF5F5;
+  padding-left: 12px;
+  padding-right: 0px;
+  margin-right: 0px;
+  padding-bottom: 5px;
+}
+.right-side{
+  padding-left: 50px;
+  padding-right: 0px;
+  background-color: #EFF5F5;
+  display: block;
+  float:right;
+  margin-right:0;
+}
+
+.heading{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 20px;
+  padding-right: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+h4{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+.header-links{
+  
+  padding:5px 15px 5px 20px;
+  float: right;
+}
+.header-links a{
+  color:black;
+  padding-right: 15px;
+}
+.prev{
+  padding:10px 20px 0 20px;
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: auto;
+}
+.heading
+{
+  color:black;
+}
+p{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 20px;
+  padding-right:20px;
+  margin:0px;
+  font-size: medium;
+}
+.body {
+  white-space: nowrap;
+}
+b{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:black;
+}
+.p-body{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 20px;
+  margin:0px;
+  padding-right:20px;
+  font-size: medium;
+}
+.body-img
+{
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: auto;
+  padding:10px 20px 0 20px;
+}
+
+.twitter-tweet{
+  display: block;
+  margin:auto;
+  padding-left: 20px;
+  padding-right:20px;
+  height: auto;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.other{
+  text-decoration: none;
+  color: black;
+  text-align:left;
+}
+
+.other-text
+{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3,h6{
+  padding-left: 20px;
+  width:90%;
+}
+.art-image{
+  height: auto;
+  padding-top: 10px;
+}
+.other{
+  transition: none;
+
+}
+#extras{
+  margin-left: auto;
+  margin-right: auto;
+  width:90%;
+  text-align: center;
+}
+
+.footer{
+  background-color: #0082e6;
+  text-align: center;
+  margin-bottom: 0px;
+  padding:10px 5px;
+}
+.footer i{
+  padding:50px 10px 20px 10px;
+  size:50px;
+}
+
+.footer p{
+  padding:1px;
+  color:white;
+  width:100%;
+}
+.footer a{
+  text-decoration: none;
+  color:inherit;
+}
+
+.footer a:hover{
+  color:white;
+}
